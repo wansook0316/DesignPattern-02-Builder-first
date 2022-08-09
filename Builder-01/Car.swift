@@ -8,6 +8,14 @@
 import Foundation
 
 internal struct Car {
+    
+    internal let brandName: String
+    internal let engine: String
+    internal let airbag: String
+    internal let color: String
+    internal let isSelfDrivingAvailable: Bool
+    internal let isSexy: Bool
+    
     internal func describe() -> String {
         return """
         Car Spec
@@ -19,11 +27,5 @@ internal struct Car {
         isSexy: \(isSexy)
         """
     }
-    
-    private var brandName: String
-    private var engine: String
-    private var airbag: String
-    private var color: String
-    private var isSelfDrivingAvailable: Bool
-    private var isSexy: Bool
+
 }
