@@ -18,13 +18,15 @@ internal struct Car {
     
     internal var description: String {
         """
-        Car Spec
+        
+        === Car Spec ===
         brandName: \(brandName)
         engine: \(engine)
         airbag: \(airbag)
         color: \(color)
         isSelfDrivingAvailable: \(isSelfDrivingAvailable)
         isSexy: \(isSexy)
+        
         """
     }
 
