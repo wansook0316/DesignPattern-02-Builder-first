@@ -7,35 +7,34 @@
 
 import Foundation
 
-// struct로 한것에 큰 의미 없음
-internal struct CarBuilder {
-    
-    internal mutating func brandName(_ brandName: String) -> Self {
+internal class CarBuilder {
+
+    internal func brandName(_ brandName: String) -> Self {
         self.brandName = brandName
         return self
     }
     
-    internal mutating func engine(_ engine: String) -> Self {
+    internal func engine(_ engine: String) -> Self {
         self.engine = engine
         return self
     }
     
-    internal mutating func airbag(_ airbag: String) -> Self {
+    internal func airbag(_ airbag: Bool) -> Self {
         self.airbag = airbag
         return self
     }
     
-    internal mutating func color(_ color: String) -> Self {
+    internal func color(_ color: String) -> Self {
         self.color = color
         return self
     }
     
-    internal mutating func isSelfDrivingAvailable(_ isSelfDrivingAvailable: Bool) -> Self {
+    internal func isSelfDrivingAvailable(_ isSelfDrivingAvailable: Bool) -> Self {
         self.isSelfDrivingAvailable = isSelfDrivingAvailable
         return self
     }
     
-    internal mutating func isSexy(_ isSexy: Bool) -> Self {
+    internal func isSexy(_ isSexy: Bool) -> Self {
         self.isSexy = isSexy
         return self
     }
@@ -51,9 +50,9 @@ internal struct CarBuilder {
     
     // Car instance를 생성하기 위해 필요한 Properties
     private var brandName: String = ""
-    private var engine: String
-    private var airbag: String = ""
-    private var color: String
-    private var isSelfDrivingAvailable: Bool
-    private var isSexy: Bool
+    private var engine: String = ""
+    private var airbag: Bool = false
+    private var color: String = ""
+    private var isSelfDrivingAvailable: Bool = false
+    private var isSexy: Bool = false
 }
