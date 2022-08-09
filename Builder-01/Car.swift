@@ -16,8 +16,8 @@ internal struct Car {
     internal let isSelfDrivingAvailable: Bool
     internal let isSexy: Bool
     
-    internal func describe() -> String {
-        return """
+    internal var description: String {
+        """
         Car Spec
         brandName: \(brandName)
         engine: \(engine)
