@@ -11,7 +11,7 @@ internal struct Car {
     
     internal let brandName: String
     internal let engine: String
-    internal let airbag: String
+    internal let airbag: Bool
     internal let color: String
     internal let isSelfDrivingAvailable: Bool
     internal let isSexy: Bool
